@@ -1,0 +1,82 @@
+:root {
+    --color-main-gray: #ebebeb;
+    --color-add-new-btn-text: #347cc0;
+    --color-add-new-btn-hover:#c3c0c0;
+    --color-table-header: #e4ebf7;
+
+    --font-main: 'Roboto', sans-serif;
+
+    --table-padding: 40px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+}
+
+html,
+body {
+    height:100%;
+    width:100%;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+main {
+    background-color: white;
+    margin: 10px;
+}
+
+.addNew-div {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.addNewbtn {
+    background-color: var(--color-main-gray);
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: var(--color-add-new-btn-text);
+    font-weight: bold;
+}
+
+.addNewbtn:hover {
+    cursor: pointer;
+    background-color: var(--color-add-new-btn-hover);
+}
+
+.eventContainer {
+    display: flex;
+}
+
+table {
+    width:100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 50px;
+    border-top: 1px solid var(--color-main-gray);
+    border-bottom: 1px solid var(--color-main-gray);
+}
+
+th,
+td {
+    font-weight: normal;
+    padding-left: var(--table-padding);
+}
+
+.eventContainer__header-cell {
+    background-color: var(--color-table-header);
+}
+
+.Actions-header-cell {
+    text-align: right;
+    padding-right: var(--table-padding);
+}
