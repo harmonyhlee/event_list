@@ -36,7 +36,7 @@ const createTmp = (arr) => {
             </td>
             <td>
             <button onclick="editBtn()">EDIT</button>
-            <button>DELETE</button>
+            <button onclick="deleteBtn(${ele.id})">DELETE</button>
             </td>
         </tr>
         `;
@@ -95,4 +95,19 @@ function saveBtn() {
 function cancelBtn() {
     newRowShown = false;
     createTmp(eventsLists); 
+}
+
+function deleteBtn(id) {
+    fetch("http://localhost:3000/events/" + id, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => {
+            console.log(json);
+            getData();
+        });
 }
