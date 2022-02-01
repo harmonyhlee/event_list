@@ -1,6 +1,6 @@
 :root {
     --color-main-gray: #ebebeb;
-    --color-add-new-btn-text: #347cc0;
+    --color-highlight-text: #347cc0;
     --color-add-new-btn-hover:#c3c0c0;
     --color-table-header: #e4ebf7;
 
@@ -41,7 +41,7 @@ main {
     background-color: var(--color-main-gray);
     padding: 10px 20px;
     margin-left: 20px;
-    color: var(--color-add-new-btn-text);
+    color: var(--color-highlight-text);
     font-weight: bold;
 }
 
@@ -58,16 +58,31 @@ table {
     width:100%;
     text-align: left;
     border-collapse: collapse;
+    height: 50px;
 }
 
-tr {
+/* #table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid var(--color-main-gray);
+    border-bottom: 1px solid var(--color-main-gray);
+} */
+
+#eventlists-container tr {
     height: 50px;
     border-top: 1px solid var(--color-main-gray);
     border-bottom: 1px solid var(--color-main-gray);
 }
 
+/* tr {
+    width: 25%;
+} */
+
 th,
 td {
+    width: 25%;
     font-weight: normal;
     padding-left: var(--table-padding);
 }
@@ -76,7 +91,22 @@ td {
     background-color: var(--color-table-header);
 }
 
-.Actions-header-cell {
+.actions-header-cell {
     text-align: right;
     padding-right: var(--table-padding);
+    
+}
+
+button {
+    border: none;
+    background-color: white;
+    color: var(--color-highlight-text);
+    padding-right: 30px;
+    font-weight: 500;
+}
+
+.lastTD {
+    text-align: right;
+    padding-right: var(--table-padding);
+
 }
