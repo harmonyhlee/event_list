@@ -1,22 +1,28 @@
 {
   "events": [
     {
-      "eventName": "TEST-1",
-      "startDate": "1641790800000",
-      "endDate": "1641790800000",
-      "id": 1
-    },
-    {
-      "eventName": "TEST-2",
-      "startDate": "1644037200000",
-      "endDate": "1644469200000",
+      "eventName": "Travel to Tahoe ",
+      "startDate": "2022-01-20",
+      "endDate": "2022-01-23",
       "id": 2
     },
     {
-      "eventName": "TEST-3",
-      "startDate": "1641963600000",
-      "endDate": "1642309200000",
+      "eventName": "Edith Dentist",
+      "startDate": "2022-01-28",
+      "endDate": "2022-01-28",
       "id": 3
+    },
+    {
+      "eventName": "planning ",
+      "startDate": "2022-02-01",
+      "endDate": "2022-02-04",
+      "id": 4
+    },
+    {
+      "eventName": "B-day",
+      "startDate": "2022-02-11",
+      "endDate": "2022-02-11",
+      "id": 5
     }
   ]
 }

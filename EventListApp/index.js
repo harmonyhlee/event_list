@@ -3,12 +3,12 @@ const baseurl = "http://localhost:3000/events";
 let eventsLists = [];
 let newRowShown = false;
 
-const getData = ((url) => {
+const getData = (url => {
     fetch(url)
     .then((response) => response.json())
     .then((json) => {
         eventsLists = json;
-        eventsLists.forEach((x) => {
+        eventsLists.forEach(x => {
             x.editable = false;
         });
         // console.log(eventsLists);
@@ -78,8 +78,12 @@ const createTmp = (arr) => {
         </tr>
         `;
     }
+
+
+
     document.getElementById("eventlists-container").innerHTML = tmp;
 }
+
 
 function addNewTr() {
     newRowShown = true;
@@ -103,7 +107,7 @@ function saveBtn() {
         }),
       })
         .then((response) => response.json())
-        .then((json) => {
+        .then(json => {
             // console.log(json);
             getData();
         });
@@ -159,3 +163,14 @@ function saveEdit(idx) {
         .then((response) => response.json())
         // .then((json) => console.log(json));
 }
+
+// function toPrevious() {
+//     window.location.href = "www.google.com"
+//     console.log("previous")
+// }
+
+
+// function toNext() {
+//     window.location.href = "www.google.com"
+//     console.log("Next")
+// }
